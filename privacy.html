@@ -14,7 +14,7 @@
   <nav><a href="index.html">Support</a><a href="privacy.html" aria-current="page">Privacy</a><a href="terms.html">Terms</a></nav>
 </header>
 <h1>Privacy Policy</h1>
-<p class="updated">Effective September 22, 2026</p>
+<p class="updated">Effective September 23, 2026</p>
 
 <p>FlexFeed is a social app for sharing meals and recipes and tracking macros. This policy explains what we collect, why, who helps us run the app, and how you can delete everything. "We" means FlexFeed and its operator, Liam Davis.</p>
 
@@ -29,6 +29,8 @@
 <tr><td>Meal and macro logs (calories, protein, carbs, fat)</td><td>When you log a meal</td><td>Your streak, daily totals and history</td></tr>
 <tr><td>Country, state/region, city and college</td><td>When you pick them, or when you tap "Use my location"</td><td>Regional and campus leaderboards</td></tr>
 <tr><td>Likes, saves, follows, remakes, XP, blocks and reports</td><td>As you use the app</td><td>Feed, leaderboards, safety and moderation</td></tr>
+<tr><td>Recipe links you import</td><td>When you use "Import from a link"</td><td>Fill in the recipe for you and credit the original creator</td></tr>
+<tr><td>Voice recordings of your recipe steps</td><td>Only while you're recording with "Record your steps"</td><td>Turn what you say into written steps. Not stored (see below)</td></tr>
 <tr><td>Technical logs (IP address, device and request info)</td><td>Automatically, by our hosting provider</td><td>Security, abuse prevention, fixing bugs</td></tr>
 </table>
 
@@ -37,6 +39,12 @@
 
 <h3>Camera and photos</h3>
 <p>The camera is used to take meal photos and scan food barcodes. A photo leaves your phone only when you post it. Barcode scanning happens on your phone; only the barcode number is sent to look up the product.</p>
+
+<h3>Microphone and voice steps</h3>
+<p>The microphone is used only when you tap "Record your steps", and only until you tap Done or Cancel (3 minutes at most). The recording is sent to our server, turned into text by OpenAI, and rewritten as numbered steps by Anthropic's Claude. We don't store the recording: it is discarded as soon as your steps come back, and only the text steps you choose to post are saved.</p>
+
+<h3>Importing a recipe from a link</h3>
+<p>When you paste a link, our server (not your phone) opens that public page, or TikTok's public post details, to read the recipe. The page text may be sent to Anthropic's Claude to pick out the ingredients and steps and to estimate macros; estimated macros are labeled in the app. The link is saved with the recipe so the original creator gets credit. To prevent abuse we log the website's name (for example tiktok.com) for 24 hours, not the full link.</p>
 
 <h3>Public by default</h3>
 <p>Your username, profile, posts, recipes, comments, XP and leaderboard ranks are visible to other users. If you turn on <em>Private account</em>, only followers you approve can see your posts and recipes. Your username still shows on leaderboards. Your email, macro logs, blocks and reports are never shown to other users.</p>
@@ -56,8 +64,12 @@
 <tr><td>Supabase (servers in the US, Oregon)</td><td>Database, login, photo storage</td><td>Everything in section 1</td></tr>
 <tr><td>Open Food Facts</td><td>Nutrition facts for scanned barcodes</td><td>The barcode number and your IP address</td></tr>
 <tr><td>Apple</td><td>App distribution; on-device place names</td><td>Your location, once, when you tap "Use my location"</td></tr>
+<tr><td>OpenAI (US)</td><td>Turning voice recordings into text</td><td>Your recording of your recipe steps</td></tr>
+<tr><td>Anthropic (US)</td><td>Turning transcripts and imported pages into recipe steps, ingredients and macro estimates</td><td>The text of your transcript or of the page you imported</td></tr>
+<tr><td>Websites and TikTok, when you import a link</td><td>Reading the recipe</td><td>A request from our server for that link (your IP address is not sent)</td></tr>
 <tr><td>Email provider used by our login system</td><td>Sending login codes</td><td>Your email address</td></tr>
 </table>
+<p>Under their business terms, OpenAI and Anthropic don't use this data to train their AI models.</p>
 <p>We may also share information if the law requires it, or to protect someone's safety.</p>
 
 <h2>4. How long we keep it</h2>
