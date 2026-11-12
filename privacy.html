@@ -14,7 +14,7 @@
   <nav><a href="index.html">Support</a><a href="privacy.html" aria-current="page">Privacy</a><a href="terms.html">Terms</a></nav>
 </header>
 <h1>Privacy Policy</h1>
-<p class="updated">Effective November 6, 2026</p>
+<p class="updated">Effective November 13, 2026</p>
 
 <p>FlexFeed is a social app for sharing meals and recipes and tracking macros. This policy explains what we collect, why, who helps us run the app, and how you can delete everything. "We" means FlexFeed and its operator, Liam Davis.</p>
 
@@ -28,7 +28,7 @@
 <tr><td>Photos, captions, recipes, comments</td><td>When you post them</td><td>Show them to other users</td></tr>
 <tr><td>Meal and macro logs (calories, protein, carbs, fat)</td><td>When you log a meal</td><td>Your streak, daily totals and history</td></tr>
 <tr><td>Country, state/region, city and college</td><td>When you pick them, or when you tap "Use my location"</td><td>Regional and campus leaderboards</td></tr>
-<tr><td>Likes, saves, follows, remakes, XP, blocks and reports</td><td>As you use the app</td><td>Feed, leaderboards, safety and moderation</td></tr>
+<tr><td>Likes, saves, follows, remakes, points, blocks and reports</td><td>As you use the app</td><td>Feed, leaderboards, safety and moderation</td></tr>
 <tr><td>Recipe links you import</td><td>When you use "Import from a link"</td><td>Fill in the recipe for you and credit the original creator</td></tr>
 <tr><td>Daily step count from Apple Health</td><td>Only if you connect Apple Health</td><td>Your daily steps, streak and step leaderboards</td></tr>
 <tr><td>Voice recordings of your recipe steps</td><td>Only while you're recording with "Record your steps"</td><td>Turn what you say into written steps. Not stored (see below)</td></tr>
@@ -42,6 +42,9 @@
 <h3>Camera and photos</h3>
 <p>The camera is used to take meal photos and scan food barcodes. A photo leaves your phone only when you post it. Barcode scanning happens on your phone; only the barcode number is sent to look up the product.</p>
 
+<h3>Photo safety check</h3>
+<p>Before your first photo upload, the app asks your permission to check photos for unsafe content. If you agree, each photo you post (and its caption, if any) is sent from our server to OpenAI's moderation service, which checks it for sexual content, graphic violence and self-harm. Photos it flags are deleted and not posted. If a photo is flagged as sexual content involving a minor, we keep a private record of the account, the file and the time for safety review. If you don't agree, the photo is not uploaded. OpenAI doesn't store the photo for training (see section 3).</p>
+
 <h3>Microphone and voice steps</h3>
 <p>The microphone is used only when you tap "Record your steps", and only until you tap Done or Cancel (3 minutes at most). The recording is sent to our server, turned into text by OpenAI, and rewritten as numbered steps by Anthropic's Claude. We don't store the recording: it is discarded as soon as your steps come back, and only the text steps you choose to post are saved.</p>
 
@@ -52,10 +55,10 @@
 <p>If you connect Apple Health, FlexFeed reads your daily step count. It doesn't read any other Health data and never writes to Health. Steps are used to show your daily total, your streak and your step leaderboard rank. Other people see your steps only if "Show my steps" is on, and never if your account is private. Health data is never used for advertising or marketing, never sold, and never shared with data brokers or AI services. You can disconnect anytime in iPhone Settings → Health → Data Access &amp; Devices → FlexFeed.</p>
 
 <h3>AI features</h3>
-<p>Three features use AI: "Calculate macros", "Import from a link" and "Record your steps". The first time you use one, the app asks your permission before anything is sent. If you say no, nothing is sent and you can enter the recipe or macros by hand.</p>
+<p>Four features use AI: estimating macros from ingredients, "Import from a link", "Record your steps" (shown in the app as "Talk me through it") and the photo safety check. The first time you use one, the app asks your permission before anything is sent. If you say no to the first three, nothing is sent and you can enter the recipe, steps or macros by hand; macros are optional. Estimated macros are labeled "estimated".</p>
 
 <h3>Public by default</h3>
-<p>Your username, profile, posts, recipes, comments, XP and leaderboard ranks are visible to other users. If you turn on <em>Private account</em>, only followers you approve can see your posts and recipes. Your username still shows on leaderboards. Your email, macro logs, blocks and reports are never shown to other users.</p>
+<p>Your username, profile, posts, recipes, comments, posting streak and leaderboard ranks (for example how many days you posted this week and the hearts you received) are visible to other users. If you turn on <em>Private account</em>, only followers you approve can see your posts and recipes. Your username still shows on leaderboards. Your email, macro logs, blocks and reports are never shown to other users.</p>
 
 <h2>2. How we use it</h2>
 <ul>
@@ -72,7 +75,7 @@
 <tr><td>Supabase (servers in the US, Oregon)</td><td>Database, login, photo storage</td><td>Everything in section 1</td></tr>
 <tr><td>Open Food Facts</td><td>Nutrition facts for scanned barcodes</td><td>The barcode number and your IP address</td></tr>
 <tr><td>Apple</td><td>App distribution; on-device place names</td><td>Your location, once, when you tap "Use my location"</td></tr>
-<tr><td>OpenAI (US)</td><td>Turning voice recordings into text</td><td>Your recording of your recipe steps</td></tr>
+<tr><td>OpenAI (US)</td><td>Turning voice recordings into text; checking posted photos for unsafe content</td><td>Your recording of your recipe steps; each photo you post and its caption (only after you agree to the photo check)</td></tr>
 <tr><td>Anthropic (US)</td><td>Estimating macros from ingredients, and turning transcripts and imported pages into recipe steps and ingredients</td><td>The ingredient lines you type, or the text of your transcript or of the page you imported</td></tr>
 <tr><td>Websites and TikTok, when you import a link</td><td>Reading the recipe</td><td>A request from our server for that link (your IP address is not sent)</td></tr>
 <tr><td>Expo and Apple Push Notification service</td><td>Delivering notifications</td><td>A device push token and the notification text</td></tr>
@@ -83,7 +86,7 @@
 <p>We may also share information if the law requires it, or to protect someone's safety.</p>
 
 <h2>4. How long we keep it</h2>
-<p>We keep your data while your account exists. When you delete your account, your profile, photos, posts, recipes, comments, logs, XP, follows, likes, saves, blocks and reports are deleted right away. Copies may remain in encrypted server backups for up to 30 days before they are overwritten. Reports other people filed about your content may be kept for moderation records.</p>
+<p>We keep your data while your account exists. When you delete your account, your profile, photos, posts, recipes, comments, logs, points, follows, likes, saves, blocks and reports are deleted right away. Copies may remain in encrypted server backups for up to 30 days before they are overwritten. Reports other people filed about your content may be kept for moderation records.</p>
 
 <h2>5. Your choices and rights</h2>
 <ul>
